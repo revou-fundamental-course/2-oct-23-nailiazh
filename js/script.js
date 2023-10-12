@@ -1,3 +1,6 @@
+// Konversi
+
+
 // ganti text berdasarkan class
 // const title = document.getElementsByClassName('title')
 // title.item(0).innerHTML = "hello world"
