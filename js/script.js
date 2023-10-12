@@ -25,7 +25,7 @@ switchBtn.addEventListener('click', function(){
     celciusTitle.innerHTML = "Fahrenheit (F)"
     fahrenheitTitle.innerHTML = "Celcius (C)"
     switchbtn.innerHTML = "Fahrenheit > Celcius"
-    celciusExp.innerHTML = "Suhu S dalam derajat Celcius (C) sama dengan suhu S dalam derajat Fahrenheit kali 9/5 dikurang 32."
+    celciusExp.innerHTML = "Suhu S dalam derajat Celcius (C) sama dengan suhu S dalam derajat Fahrenheit (F) dikurang 32 kali 5/9. <br>S(C)=(S(F) - 32) x 5/9 <br>atau <br>S(C)=(S(F) - 32) x 0.5"
 })
 // Konversi
 btnKonversi.addEventListener('click',function(){
@@ -53,9 +53,10 @@ btnReverse.addEventListener('click',function(){
     switchbtn.innerHTML = "Fahrenheit > Celcius"
     celciusExp.innerHTML = "Suhu S dalam derajat Celcius (C) sama dengan suhu S dalam derajat Fahrenheit kali 9/5 dikurang 32."
 
-    fahrenheit = document.getElementById('farenheit').value
-    hasil = Number((fahrenheit - 32) * 5/9);
-    document.getElementById('celcius').value = hasil
-    document.getElementById('kalkulasi').value = "( " + fahrenheit + " - 32) * 5/9 = " + hasil
+    celciusInp = document.getElementById('convers-field').value
+    hasil = Number((celciusInp -32 ) * 5/9);
+    document.getElementById('output-field').value = hasil
+    document.getElementById('cara-kalk').value = "( " + celciusInp + " - 32) * 5/9 = " + hasil
+    
 })
 
