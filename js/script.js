@@ -7,7 +7,7 @@ const fahrenheitTitle = document.getElementById('fahrenheit-title')
 const celciusExp = document.getElementById('celcius-exp')
 const switchbtn = document.getElementById('btn-tukar')
 
-var celcius
+var celciusInp
 var fahrenheit
 var hasil
 
@@ -29,10 +29,10 @@ switchBtn.addEventListener('click', function(){
 })
 // Konversi
 btnKonversi.addEventListener('click',function(){
-    celciusInput = document.getElementById('celcius-input').value
-    hasil = Number(celciusInput * (9/5) + 32);
-    document.getElementById('farenheit-input').value = hasil
-    document.getElementById('output-field').value = celciusInput + " * (9/5) + 32 = " + hasil
+    celciusInp = document.getElementById('celcius-input').value
+    hasil = Number(celciusInp * (9/5) + 32);
+    document.getElementById('output-field').value = hasil
+    document.getElementById('output-field').value = celciusInp + " * (9/5) + 32 = " + hasil
 })
 
 // Reset
