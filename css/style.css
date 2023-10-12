@@ -4,9 +4,6 @@ body{
     background-color: #F1F1F1;
     padding-top: 30px;
 }
-.bg-cek{
-  background-color: #FFC700;
-}
 main{
     width: 700px;
     height: auto;
@@ -17,19 +14,16 @@ main{
     display: flex;
     flex-direction: row;
 }
-/* main:hover{
-    transform: translateX(10px);
-} */
 header{
     color: #585DDB;
     text-align: left;
     border-radius: 8px;
 }
-.konversi{
+.conversion{
   display: flex;
   flex-direction: row;
 }
-.footer{
+footer{
   font-size: 0.8rem;
   background-color: #585DDB;
   color: #fff;
@@ -51,7 +45,7 @@ header{
     font-weight: bold;
     color: #585DDB;
 }
-.label-carakalk{
+.label-methode{
   display: block;
   margin-bottom: 6px;
   margin-top: 6px;
@@ -95,7 +89,7 @@ header{
     outline: none;
     font-size: 1.2rem;
 }
-#cara-kalk{
+#methode{
   padding-left: 15px;
   font-size: 1.2rem;
   margin: 5px 0 5px 0;
@@ -108,7 +102,7 @@ header{
   text-align: center;
 }
 /* --------------------------------------------- button styles */
-.btn-tukar{
+.reverse-info{
   text-decoration: none;
   border: 1px #585DDB solid;
   width: 155px;
@@ -120,15 +114,6 @@ header{
   margin: auto;
   margin-bottom: 8px;
   background-color: #fff;
-}
-.btn-tukar:hover{
-  background-color: #585DDB;
-  color: #fff;
-  transition: 240ms;
-}
-.btn-tukar:active{
-  transform: translateY(1px);
-  background-color: #4e51b3;
 }
 button{
     width: 100px;
@@ -147,19 +132,19 @@ button{
   padding-top: 16px;
   padding-bottom: 12px;
 }
-#button-konversi{
+#button-conversion{
   background-color: #6b6fec;
   color: #fff;
   box-shadow: #a1a3e7ad 0px 6px 10px;
 }
-#button-konversi:hover{
+#button-conversion:hover{
   background-color: #585DDB;
   color: #fff;
   transform: translateY(-2px);
   transform: translateX(-1px);
   transition: 120ms;
 }
-#button-konversi:active{
+#button-conversion:active{
   transform: translateY(1px);
   background-color: #4e51b3;
 }

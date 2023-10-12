@@ -12,10 +12,10 @@
         <section class="input-section">
             <header>
                 <h2 id="title" class="title my-0">Kalkulator Suhu</h2>
-                <p class="fs-1 border-bottom-grey pb-3 ">Masukkan suhu derajat <span id="celcius-teks">Celsius (C)</span> ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk <span id="fahrenheit-teks">Fahrenheit (F)</span>.</p>
+                <p class="fs-1 border-bottom-grey pb-3 ">Masukkan suhu derajat <span id="celcius-text">Celsius (C)</span> ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk <span id="fahrenheit-text">Fahrenheit (F)</span></p>
             </header>
-            <button id="btn-tukar" class="btn-tukar">Celcius > Fahrenheit</button>
-            <div class="konversi">
+            <h3 id="reverse-info" class="reverse-info mt-0">Celcius ke Fahrenheit</h3>
+            <section class="conversion">
                 <div class="celcius">
                     <label class="label" id="celcius-input" for="convers-field">Celcius</label>
                     <input class="" id="convers-field" type="number" placeholder="0">
@@ -24,38 +24,28 @@
                     <label class="label" id="fahrenheit-input" for="output-field">Fahrenheit</label>
                     <input type="number" id="output-field" disabled></input>
                 </div>
-            </div>
-            <div class="input-button mb-3">
-                <button id="button-konversi">Konversi</button>
-                <button id="button-reset" class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/>
-                    <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/>
-                    </svg>
-                    Reset
-                </button>
-                <button id="button-reverse"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
-                        <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
-                        <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
-                    </svg>
-                    Reverse
-                </button>
-            </div>
+            </section>
+            <section class="input-button mb-3">
+                <button id="button-conversion">Konversi</button>
+                <button id="button-reset" class="">Reset</button>
+                <button id="button-reverse">Reverse</button>
+            </section>
         </section>
-        <section class="footer">
+        <footer>
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-thermometer-sun" viewBox="0 0 16 16">
                 <path d="M5 12.5a1.5 1.5 0 1 1-2-1.415V2.5a.5.5 0 0 1 1 0v8.585A1.5 1.5 0 0 1 5 12.5z"/>
                 <path d="M1 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM3.5 1A1.5 1.5 0 0 0 2 2.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0L5 10.486V2.5A1.5 1.5 0 0 0 3.5 1zm5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5zm4.243 1.757a.5.5 0 0 1 0 .707l-.707.708a.5.5 0 1 1-.708-.708l.708-.707a.5.5 0 0 1 .707 0zM8 5.5a.5.5 0 0 1 .5-.5 3 3 0 1 1 0 6 .5.5 0 0 1 0-1 2 2 0 0 0 0-4 .5.5 0 0 1-.5-.5zM12.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 1 1 0 1h-1a.5.5 0 0 1-.5-.5zm-1.172 2.828a.5.5 0 0 1 .708 0l.707.708a.5.5 0 0 1-.707.707l-.708-.707a.5.5 0 0 1 0-.708zM8.5 12a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5z"/>
             </svg>
-            <label class="label-carakalk" for="cara-kalk">Cara Kalkulasi</label>
-            <input type="text" id="cara-kalk" placeholder="" disabled></input>
+            <label class="label-methode" for="methode">Cara Kalkulasi</label>
+            <input type="text" id="methode" placeholder="" disabled></input>
             <h3 class="footer-head">Cara Konversi Dari <span id="celcius-title">Celcius (C) </span> ke <span id="fahrenheit-title">Fahrenheit (F)</span></h3>
-            <span id="celcius-exp">
-                Suhu S dalam derajat Fahrenheit (F) sama dengan suhu S dalam derajat Celcius (C) kali 9/5 tambah 32.</br>
-                <br>S(F)=(S(C) x 9/5) + 32
+            <span id="explanation">
+                <p>Suhu S dalam derajat Fahrenheit (F) sama dengan suhu S dalam derajat Celcius (C) kali 9/5 tambah 32.
+                <p>S(F)=(S(C) x 9/5) + 32
                 <br>atau
                 <br>S(F)=(S(C) x 1.8) + 32
             </span>
-        </section>
+        </footer>
     </main>
     <script src="js/script.js"></script>
 </body>
