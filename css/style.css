@@ -50,7 +50,7 @@ header{
     font-weight: bold;
     color: #585DDB;
 }
-#celcius-input-field{
+#convers-field{
     width: 175px;
     height: 35px;
     padding: 10px;
@@ -61,49 +61,30 @@ header{
     outline: none;
     font-size: 1.2rem;
 }
-#celcius-input-field:hover{
+#convers-field:hover{
     border: 0;
     border-radius: 8px;
     outline: none;
     background-color: #fce6da;
     transition: 240ms;
 }
-#celcius-input-field:focus{
+#convers-field:focus{
     border-radius: 8px;
     outline: none;
     transition: 240ms;
     box-shadow: #ecc3afa9 0px 15px 30px -6px inset, #ebc4b1a9 0px 9px 18px -9px inset;
 }
-#fahrenheit-input-field{
-  padding: 10px;
-  margin: 5px 0 5px 0;
-  border: #4e4e4e solid 1px;
-  border-radius: 8px;
-  outline: none;
-}
-#fahrenheit-input-field:hover{
-  padding: 10px;
-  margin: 5px 0 5px 0;
-  border: #FFC700 solid 1px;
-  border-radius: 8px;
-}
-#fahrenheit-input-field:focus{
-  padding: 10px;
-  margin: 5px 0 5px 0;
-  border: #C1C1C1 solid 1px;
-  border-radius: 8px;
-  background-color: #F3F3F3;
-}
 /* --------------------------------------------- output form */
-#fahrenheit-output-field{
-  padding: 10px;
+#output-field{
   width: 175px;
-  height: 35px;
-  border: 0;
-  border-radius: 8px;
-  outline: none;
-  background-color: #F2F1F6;
-  font-size: 1.2rem;
+    height: 35px;
+    padding: 10px;
+    margin-right: 15px;
+    background-color: #F2F1F6;
+    border: 0;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1.2rem;
 }
 #cara-kalk{
   padding-left: 15px;
@@ -120,19 +101,24 @@ header{
 .btn-tukar{
   text-decoration: none;
   border: 1px #585DDB solid;
-  width: 135px;
+  width: 155px;
   text-align: center;
-  padding: 4px;
+  padding: 6px;
   border-radius: 25px;
   color: #585DDB;
   font-size: 0.8rem;
   margin: auto;
   margin-bottom: 8px;
+  background-color: #fff;
 }
 .btn-tukar:hover{
   background-color: #585DDB;
   color: #fff;
   transition: 240ms;
+}
+.btn-tukar:active{
+  transform: translateY(1px);
+  background-color: #4e51b3;
 }
 button{
     width: 100px;
@@ -176,6 +162,7 @@ button{
   background-color: #F2F1F6;
   border: 1px #585DDB solid;
   color: #585DDB;
+  transition: 240ms;
 }
 #button-reset:active{
   transform: translateY(1px);
@@ -191,6 +178,7 @@ button{
   background-color: #F2F1F6;
   border: 1px #585DDB solid;
   color: #585DDB;
+  transition: 240ms;
 }
 #button-reverse:active{
   transform: translateY(1px);

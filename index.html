@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temperatur Conversion</title>
+    <title>Kalkulator Suhu</title>
     <!-- style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,17 +12,17 @@
         <section class="input-section">
             <header>
                 <h2 id="title" class="title my-0">Kalkulator Suhu</h2>
-                <p class="fs-1 border-bottom-grey pb-3 ">Masukkan suhu derajat <span>Celsius (C)</span> ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk <span>Fahrenheit (F)</span>.</p>
+                <p class="fs-1 border-bottom-grey pb-3 ">Masukkan suhu derajat <span id="celcius-teks">Celsius (C)</span> ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk <span id="fahrenheit-teks">Fahrenheit (F)</span>.</p>
             </header>
-            <a href="" id="btn-tukar" class="btn-tukar">Celcius ke Fahrenheit</a>
+            <button id="btn-tukar" class="btn-tukar">Celcius > Fahrenheit</button>
             <div class="konversi">
                 <div class="celcius">
-                    <label class="label" for="celcius-input-field">Celcius</label>
-                    <input class="" id="celcius-input-field" type="number" placeholder="0">
+                    <label class="label" id="celcius-input" for="convers-field">Celcius</label>
+                    <input class="" id="convers-field" type="number" placeholder="0">
                 </div>
                 <div class="fahrenheit">
-                    <label class="label"  for="">Fahrenheit</label>
-                    <input type="number" id="fahrenheit-output-field" disabled placeholder="1"></input>
+                    <label class="label" id="fahrenheit-input" for="output-field">Fahrenheit</label>
+                    <input type="number" id="output-field" disabled placeholder="1"></input>
                 </div>
             </div>
             <div class="input-button mb-3">
@@ -48,11 +48,13 @@
                 <path d="M5 12.5a1.5 1.5 0 1 1-2-1.415V2.5a.5.5 0 0 1 1 0v8.585A1.5 1.5 0 0 1 5 12.5z"/>
                 <path d="M1 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM3.5 1A1.5 1.5 0 0 0 2 2.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0L5 10.486V2.5A1.5 1.5 0 0 0 3.5 1zm5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5zm4.243 1.757a.5.5 0 0 1 0 .707l-.707.708a.5.5 0 1 1-.708-.708l.708-.707a.5.5 0 0 1 .707 0zM8 5.5a.5.5 0 0 1 .5-.5 3 3 0 1 1 0 6 .5.5 0 0 1 0-1 2 2 0 0 0 0-4 .5.5 0 0 1-.5-.5zM12.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 1 1 0 1h-1a.5.5 0 0 1-.5-.5zm-1.172 2.828a.5.5 0 0 1 .708 0l.707.708a.5.5 0 0 1-.707.707l-.708-.707a.5.5 0 0 1 0-.708zM8.5 12a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5z"/>
             </svg>
-            <h3 class="footer-head">Cara Konversi Dari Celcius (C) ke Fahrenheit (F)</h3>
-            Suhu S dalam derajat Fahrenheit (F) sama dengan suhu S dalam derajat Celcius (C) kali 9/5 tambah 32.</br>
-            <br>S(F)=(S(C) x 9/5) + 32
-            <br>atau
-            <br>S(F)=(S(C) x 1.8) + 32
+            <h3 class="footer-head">Cara Konversi Dari <span id="celcius-title">Celcius (C) </span> ke <span id="fahrenheit-title">Fahrenheit (F)</span></h3>
+            <span id="celcius-exp">
+                Suhu S dalam derajat Fahrenheit (F) sama dengan suhu S dalam derajat Celcius (C) kali 9/5 tambah 32.</br>
+                <br>S(F)=(S(C) x 9/5) + 32
+                <br>atau
+                <br>S(F)=(S(C) x 1.8) + 32
+            </span>
         </section>
     </main>
     <script src="js/script.js"></script>
