@@ -22,6 +22,7 @@ header{
 .conversion{
   display: flex;
   flex-direction: row;
+  /* background-color: #7e82f1; */
 }
 footer{
   font-size: 0.8rem;
@@ -45,7 +46,7 @@ footer{
     font-weight: bold;
     color: #585DDB;
 }
-.label-methode{
+.label-method{
   display: block;
   margin-bottom: 6px;
   margin-top: 6px;
@@ -79,7 +80,7 @@ footer{
 }
 /* --------------------------------------------- output form */
 #output-field{
-  width: 175px;
+    width: 170px;
     height: 35px;
     padding: 10px;
     margin-right: 15px;
@@ -89,7 +90,21 @@ footer{
     outline: none;
     font-size: 1.2rem;
 }
-#methode{
+.alert{
+  background-color: #fce4d5;
+  color: #973b01;
+  border-radius: 4px;
+  margin: auto;
+  padding: 6px;
+  width: 100%;
+}
+#error-message{
+  width: 400px;
+  border-radius: 4px;
+  margin-top: 14px;
+  text-align: center;
+}
+#method{
   padding-left: 15px;
   font-size: 1.2rem;
   margin: 5px 0 5px 0;
@@ -104,16 +119,36 @@ footer{
 /* --------------------------------------------- button styles */
 .reverse-info{
   text-decoration: none;
-  border: 1px #585DDB solid;
-  width: 155px;
-  text-align: center;
-  padding: 6px;
-  border-radius: 25px;
-  color: #585DDB;
-  font-size: 0.8rem;
   margin: auto;
-  margin-bottom: 8px;
-  background-color: #fff;
+  color: #585DDB;
+  display: flex;
+  flex-direction: row;
+}
+#reverse-info-1{
+  margin-top: 0;
+  width: 120px;
+  text-align: right;
+}
+#reverse-info-2{
+  margin-top: 0;
+  width: 120px;
+  text-align: left;
+}
+#change{
+  text-decoration: none;
+  width: 45px;
+  text-align: center;
+  color: #989bec;
+  font-size: 0.8rem;
+  margin-top: 3px;
+  cursor: pointer;
+}
+#change:hover{
+  color: #363bdd;
+  transition: 240ms;
+}
+#change:active{
+  color: #333686;
 }
 button{
     width: 100px;
@@ -181,9 +216,7 @@ button{
   border: 1px#F2F1F6 solid;
 }
 /* --------------------------------------------- component */
-.footer-head{
-  margin-bottom: 4px;
-}
+
 .fs-1{
     font-size: 0.9rem;
 }
